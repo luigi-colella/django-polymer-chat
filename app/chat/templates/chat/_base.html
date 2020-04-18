@@ -1,0 +1,26 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="{% static 'chat/bootstrap.css' %}">
+
+        <title>{% block title %}Django Polymer Chat{% endblock %}</title>
+    </head>
+    <body>
+
+        <div class="container">
+            {% block content %}{% endblock %}
+        </div>
+
+        <!-- jQuery, Popper.js, Bootstrap JS -->
+        <script src="{% static 'chat/jquery.js' %}"></script>
+        <script src="{% static 'chat/popper.js' %}"></script>
+        <script src="{% static 'chat/bootstrap.js' %}"></script>
+    </body>
+</html>
